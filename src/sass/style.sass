@@ -25,13 +25,13 @@ nav
 	display: flex
 	justify-content: space-between
 	padding: 16px 70px
-	margin: 0
+	margin: 10
 	list-style: none
 	.menu_link 
 		font-size: 15px
 		font-weight: 300
 		color: $var2
-	
+
 	.menu_item 
 		border-right: 2px dotted black
 		padding-right: 28px
@@ -246,6 +246,13 @@ nav
             left: 50%
             transform: translateX(-50%)
             cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $var5
+				
     .okey
         font-weight: 700  
         text-transform: uppercase     
