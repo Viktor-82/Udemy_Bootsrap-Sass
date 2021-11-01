@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -323,8 +324,7 @@ nav {
   border-radius: 100%;
   cursor: pointer;
 }
-/* Начало кода. Создание значка '+' при помощи css  и 
-псевдоэлементов 'before & after' */
+
 .mobile_item_plus::before {
   content: '';
   display: block;
@@ -352,6 +352,80 @@ nav {
 .mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
   background-color: #ff5656;
 }
-/* Окончание кода. Создание значка '+' при помощи css  и 
-псевдоэлементов 'before & after' */
+
+.label {
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 38px;
+}
+
+.require {
+  padding: 68px 0 84px 0;
+}
+
+.require_block {
+  margin: 33px 0;
+}
+
+.require_block_nmb {
+  margin-bottom: 0;
+}
+
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+  /** Стилизуем и позиционируем чекбоксы при помощи CSS
+			и псевдоклассов **/
+}
+
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.require_list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 21px;
+  height: 20px;
+  background: url("../icon/checkbox_blue.png");
+}
+
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+.require .warning .require_list li::before {
+  background: url("../icon/checkbox_red.png");
+}
 /*# sourceMappingURL=style.css.map */

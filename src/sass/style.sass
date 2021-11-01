@@ -263,3 +263,65 @@ nav
 			&:hover
 				&::before, &::after
 					background-color: $second_color	
+.label
+	width: 112px
+	height: 24px
+	background-color: #000000
+	font-size: 11px
+	font-weight: 100
+	text-transform: uppercase
+	color: #ffffff
+	margin: 0 auto
+	text-align: center
+	padding-top: 6px
+
+.title
+	font-size: 38px
+	font-weight: 700
+	text-transform: uppercase
+	color: #222222
+	margin: 0 auto
+	text-align: center
+	margin-top: 38px
+
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list		
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		/** Стилизуем и позиционируем чекбоксы при помощи CSS 
+			и псевдоклассов **/
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			// Однострочный который будет виден только в Sass
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 4px
+				width: 21px
+				height: 20px
+				background: url('../icon/checkbox_blue.png')
+	.warning
+		.require_title
+			color: $second_color
+		.require_list
+			li
+				&::before
+					background: url('../icon/checkbox_red.png')
+
+		
