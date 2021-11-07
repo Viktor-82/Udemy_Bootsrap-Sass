@@ -323,6 +323,8 @@ nav {
   margin: 0 auto;
   border-radius: 100%;
   cursor: pointer;
+  /** Стилизация элемента "+" при помощи CSS и псевдоклассов
+				before и after **/
 }
 
 .mobile_item_plus::before {
@@ -376,6 +378,12 @@ nav {
   margin-top: 38px;
 }
 
+.subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .require {
   padding: 68px 0 84px 0;
 }
@@ -427,5 +435,64 @@ nav {
 
 .require .warning .require_list li::before {
   background: url("../icon/checkbox_red.png");
+}
+
+.AllWorld {
+  position: relative;
+  min-height: 660px;
+  background: url("../img/layer_33_222.png") center center/cover no-repeat;
+  padding: 49px 0;
+}
+
+.AllWorld .LookAllCity {
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 49px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+.AllWorld .label {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.AllWorld .title {
+  color: #ffffff;
+}
+
+.AllWorld .subtitle {
+  color: #ffffff;
+}
+
+footer {
+  position: relative;
+  padding: 14px 23px 39px 23px;
+  min-height: 157px;
+  background-color: #ffffff;
+}
+
+footer .LineFooter {
+  position: absolute;
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .SocialIconsBlackRound {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #000000;
+  border-radius: 51%;
 }
 /*# sourceMappingURL=style.css.map */

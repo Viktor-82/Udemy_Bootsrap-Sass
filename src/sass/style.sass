@@ -243,6 +243,8 @@ nav
 			margin: 0 auto
 			border-radius: 100%
 			cursor: pointer
+			/** Стилизация элемента "+" при помощи CSS и псевдоклассов
+				before и after **/
 			&::before
 				content: ''
 				display: block
@@ -284,6 +286,11 @@ nav
 	text-align: center
 	margin-top: 38px
 
+.subtitle
+	font-size: 17px
+	font-weight: 400
+	text-align: center	
+
 .require
 	padding: 68px 0 84px 0
 	&_block
@@ -324,4 +331,45 @@ nav
 				&::before
 					background: url('../icon/checkbox_red.png')
 
+.AllWorld
+	position: relative
+	min-height: 660px
+	background: url('../img/layer_33_222.png') center center / cover no-repeat
+	padding: 49px 0
+	.LookAllCity
+		position: absolute
+		display: block
+		left: 50%
+		bottom: 49px 
+		transform: translateX(-50%)
+		text-decoration: none
+		font-size: 15px
+		font-weight: 400
+		text-transform: uppercase
+		color: #1fbad6
+	.label
+		background-color: $var2
+		color: $var3
+	.title
+		color: $var2
+	.subtitle
+		color: $var2
+footer
+	position: relative
+	padding: 14px 23px 39px 23px
+	min-height: 157px
+	background-color: $var2
+	.LineFooter
+		position: absolute
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		left: 50%
+		transform: translateX(-50%)
+	.SocialIconsBlackRound
+		display: inline-block
+		width: 32px
+		height: 32px
+		background-color: $var3
+		border-radius: 51%
 		
