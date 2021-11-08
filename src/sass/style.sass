@@ -356,6 +356,10 @@ nav
 		color: $var2
 footer
 	position: relative
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-content: space-between
 	padding: 14px 23px 39px 23px
 	min-height: 157px
 	background-color: $var2
@@ -366,10 +370,50 @@ footer
 		background-color: #1fbad6
 		left: 50%
 		transform: translateX(-50%)
-	.SocialIconsBlackRound
-		display: inline-block
-		width: 32px
-		height: 32px
-		background-color: $var3
-		border-radius: 51%
+	.SocialIcons
+		margin-top: 30px
+		.SocialIconsBlackRound
+			padding: 5px 2px
+			display: inline-block
+			width: 32px
+			height: 32px
+			background-color: $var3
+			border-radius: 51%
+	.FooterMenu
+		margin-top: 20px
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-content: space-between
+		height: 50px
+		width: 440px
+		a
+			text-decoration: none
+		.MenuFooter
+			margin: 10px
+			font-size: 15px
+			font-weight: 300
+			text-transform: uppercase
+			color: #070716
+		.SubMenuFooter
+			font-size: 11px
+			text-transform: uppercase
+			color: #999999
+		.LangFooter
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -30px
+	.SocialStore
+		margin-top: 30px
+		.SocialStoreIcon
+			width: 90px
+			height: 27px
+			img
+				width: 90px
+				height: 27px
+
+
+
 		

@@ -473,6 +473,15 @@ nav {
 
 footer {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   padding: 14px 23px 39px 23px;
   min-height: 157px;
   background-color: #ffffff;
@@ -488,11 +497,73 @@ footer .LineFooter {
           transform: translateX(-50%);
 }
 
-footer .SocialIconsBlackRound {
+footer .SocialIcons {
+  margin-top: 30px;
+}
+
+footer .SocialIcons .SocialIconsBlackRound {
+  padding: 5px 2px;
   display: inline-block;
   width: 32px;
   height: 32px;
   background-color: #000000;
   border-radius: 51%;
+}
+
+footer .FooterMenu {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 50px;
+  width: 440px;
+}
+
+footer .FooterMenu a {
+  text-decoration: none;
+}
+
+footer .FooterMenu .MenuFooter {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #070716;
+}
+
+footer .FooterMenu .SubMenuFooter {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+footer .FooterMenu .LangFooter {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -30px;
+}
+
+footer .SocialStore {
+  margin-top: 30px;
+}
+
+footer .SocialStore .SocialStoreIcon {
+  width: 90px;
+  height: 27px;
+}
+
+footer .SocialStore .SocialStoreIcon img {
+  width: 90px;
+  height: 27px;
 }
 /*# sourceMappingURL=style.css.map */
