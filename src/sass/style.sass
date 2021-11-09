@@ -355,21 +355,24 @@ nav
 	.subtitle
 		color: $var2
 footer
-	position: relative
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-around
-	align-content: space-between
 	padding: 14px 23px 39px 23px
 	min-height: 157px
 	background-color: $var2
 	.LineFooter
-		position: absolute
 		width: 299px
 		height: 4px
 		background-color: #1fbad6
-		left: 50%
-		transform: translateX(-50%)
+		margin: 0 auto
+	.FooterWrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+		& > div
+			width: 33%
+			&:nth-child(3)
+				display: flex
+				justify-content: flex-end				
 	.SocialIcons
 		margin-top: 30px
 		.SocialIconsBlackRound
@@ -384,32 +387,32 @@ footer
 			background-color: $var3
 			border-radius: 51%
 	.FooterMenu
-		margin-top: 20px
-		margin-left: 100px
-		position: relative
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-between
-		align-content: space-between
 		height: 50px
 		width: 440px
 		a
 			text-decoration: none
+		.MenuFooterWrap
+			display: flex
+			justify-content: space-between
+			padding: 0 10px
 		.MenuFooter
-			margin: 10px
 			font-size: 15px
 			font-weight: 300
 			text-transform: uppercase
 			color: #070716
+		.SubMenuFooterWrap
+			display: flex
+			justify-content: space-between
+			margin-top: 10px
 		.SubMenuFooter
 			font-size: 11px
 			text-transform: uppercase
 			color: #999999
 		.LangFooter
-			position: absolute
-			left: 50%
-			transform: translateX(-50%)
-			bottom: -30px
+			display: block
+			margin: 0 auto
+			margin-top: 19px
+			text-align: center
 	.SocialStore
 		margin-top: 30px
 		.SocialStoreIcon
