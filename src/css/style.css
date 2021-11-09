@@ -503,7 +503,17 @@ footer .SocialIcons {
 
 footer .SocialIcons .SocialIconsBlackRound {
   padding: 5px 2px;
-  display: inline-block;
+  float: left;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 32px;
   height: 32px;
   background-color: #000000;
@@ -512,6 +522,7 @@ footer .SocialIcons .SocialIconsBlackRound {
 
 footer .FooterMenu {
   margin-top: 20px;
+  margin-left: 100px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
