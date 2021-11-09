@@ -533,6 +533,10 @@ footer .SocialIcons .SocialIconsBlackRound {
   border-radius: 51%;
 }
 
+footer .SocialIcons .SocialIconsBlackRound span {
+  color: #ffffff;
+}
+
 footer .FooterMenu {
   height: 50px;
   width: 440px;
