@@ -611,11 +611,41 @@ footer .SocialStore .SocialStoreIcon img {
   .menu_link {
     font-size: 13px;
   }
+  .subheader img {
+    width: 250px;
+  }
+  .subheader_official {
+    font-size: 12px;
+  }
+  .subheader_phone {
+    font-size: 21px;
+  }
   .mobile_item {
-    width: 310px;
+    width: 234px;
+    height: 213px;
+    margin-bottom: 15px;
   }
   .mobile_item_subtitle {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  .mobile .title {
+    font-size: 35px;
+  }
+  .mobile .subtitle {
+    font-size: 15px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .descr_work_img {
+    width: 100px;
+    height: 100px;
+  }
+  .descr_work .col-md-4 {
+    font-size: 14px;
+  }
+  .descr_work .col-md-4 span {
+    font-size: 16px;
   }
   footer .FooterMenu .SubMenuFooter {
     font-size: 10px;
