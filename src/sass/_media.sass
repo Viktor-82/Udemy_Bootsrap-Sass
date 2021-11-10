@@ -37,7 +37,7 @@
 		& .FooterMenu 
 			& .SubMenuFooter
 				font-size: 10px
-
+				
 @media (max-width: 991px)
 	.menu
 		padding: 14px 50px
@@ -50,20 +50,15 @@
 			font-size: 55px
 
 @media (max-width: 768px)
-	.menu
-		padding: 14px 50px
-		&_item
-			padding-right: 15px
-		&_link
-			font-size: 15px           
-	.promo
-		&_header
-			font-size: 53px
+	nav
+		position: relative
+		.menu
+			display: none
 	.hamburger
 		display: block
 		position: absolute
 		right: 10px
-		top: 50px
+		top: 24px
 		transform: translateY(-50%)
 		width: 26px
 		height: 9px
@@ -72,10 +67,33 @@
 			height: 2px
 			width: 100%
 			background-color: #fff
-			margin-bottom: 2px
+			margin-bottom: 4px
 		&_active
 			span
 				&:nth-child(1)
 					transform: rotate(-45deg)
+	footer
+		.FooterWrapper > div:nth-child(1)
+			width: 25%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			align-content: space-around
+		.FooterWrapper > div:nth-child(2)
+			width: 49%
+			padding-left: 5px
+		.FooterWrapper > div:nth-child(3)
+			height: 90px
+			flex-direction: column
+			align-items: center
+			width: 25%
+		.SocialIcons
+			margin-top: 0
+			height: 90px
+			&BlackRound
+				margin: 6px 19px 6px 19px
+		.SocialStore
+			margin-top: -5px
+
 					
 
