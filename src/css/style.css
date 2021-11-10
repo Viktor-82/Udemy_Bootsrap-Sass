@@ -651,4 +651,16 @@ footer .SocialStore .SocialStoreIcon img {
     font-size: 10px;
   }
 }
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 14px 50px;
+  }
+  .menu_item {
+    padding-right: 15px;
+  }
+  .menu_link {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
