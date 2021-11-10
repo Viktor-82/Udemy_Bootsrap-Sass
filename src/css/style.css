@@ -15,6 +15,10 @@ nav {
   background-color: #212121;
 }
 
+.hamburger {
+  display: none;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,6 +665,45 @@ footer .SocialStore .SocialStoreIcon img {
   }
   .menu_link {
     font-size: 15px;
+  }
+  .promo_header {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 14px 50px;
+  }
+  .menu_item {
+    padding-right: 15px;
+  }
+  .menu_link {
+    font-size: 15px;
+  }
+  .promo_header {
+    font-size: 53px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 26px;
+    height: 9px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
