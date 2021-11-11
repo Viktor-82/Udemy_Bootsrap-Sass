@@ -147,6 +147,7 @@ nav {
   border: 3px solid rgba(0, 0, 0, 0.06);
   -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11);
           box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 7px;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -814,6 +815,58 @@ footer .SocialStore .SocialStoreIcon img {
   }
   footer .SocialIconsBlackRound {
     margin: 6px 9px 6px 9px;
+  }
+}
+
+@media (min-width: 320px) {
+  header {
+    height: 30px;
+  }
+  .subheader {
+    top: 30px;
+    height: 60px;
+  }
+  .subheader img {
+    width: 130px;
+  }
+  .subheader_official {
+    display: none;
+  }
+  .subheader_phone {
+    font-size: 12px;
+  }
+  .subheader_btn {
+    width: 116px;
+    height: 28px;
+    font-size: 10px;
+  }
+  nav {
+    height: 30px;
+  }
+  .hamburger {
+    top: 13px;
+  }
+  .hamburger span {
+    margin-bottom: 3px;
+  }
+  .promo {
+    padding: 113px 0 32px 0;
+    min-height: 400px;
+  }
+  .promo_header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+  }
+  .promo_descr {
+    display: none;
+  }
+  .promo_btn {
+    width: 216px;
+    height: 56px;
+    margin-top: 69px;
   }
 }
 /*# sourceMappingURL=style.css.map */
