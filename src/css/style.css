@@ -105,6 +105,10 @@ nav {
   background-color: #ff5656;
 }
 
+.xs-visible {
+  display: none;
+}
+
 .promo {
   min-height: 799px;
   background: url(../img/bg_header.png) center center/cover no-repeat;
@@ -157,7 +161,7 @@ nav {
 }
 
 .descr_work {
-  height: 1100px;
+  min-height: 1100px;
   padding: 71px 0 65px 0;
 }
 
@@ -694,10 +698,22 @@ footer .SocialStore .SocialStoreIcon img {
     width: 100%;
     background-color: #fff;
     margin-bottom: 4px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
   }
   .hamburger_active span:nth-child(1) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
   }
   footer .FooterWrapper > div:nth-child(1) {
     width: 25%;
@@ -735,6 +751,69 @@ footer .SocialStore .SocialStoreIcon img {
   }
   footer .SocialStore {
     margin-top: -5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .subheader .col-6 {
+    text-align: center;
+  }
+  .subheader_call {
+    display: none;
+  }
+  .subheader_phone {
+    font-style: 12px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .subheader_btn {
+    margin-top: 4px;
+    height: 43px;
+    font-size: 16px;
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+  .promo_header {
+    line-height: 50px;
+  }
+  .promo .col-12 {
+    text-align: center;
+  }
+  .descr_work .col-md-4 {
+    padding: 0 20px;
+  }
+  .descr_work .col-md-4 span {
+    display: block;
+    text-align: center;
+    margin: 10px 0 -10px 0;
+  }
+  .mobile_item {
+    width: 260px;
+    height: 236px;
+  }
+  .mobile_item_subtitle {
+    font-size: 20px;
+  }
+  footer .FooterWrapper > div:nth-child(1) {
+    width: 20%;
+  }
+  footer .FooterWrapper > div:nth-child(2) {
+    width: 59%;
+    padding-left: 5px;
+  }
+  footer .FooterWrapper > div:nth-child(3) {
+    width: 20%;
+  }
+  footer .SocialIcons {
+    margin-top: 0;
+    height: 90px;
+  }
+  footer .SocialIconsBlackRound {
+    margin: 6px 9px 6px 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */
