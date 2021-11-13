@@ -686,7 +686,37 @@ footer .SocialStore .SocialStoreIcon img {
     position: relative;
   }
   nav .menu {
-    display: none;
+    /** Добавление интерактивного меню **/
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  nav .menu_active {
+    left: 0;
+  }
+  nav .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  nav .menu_link {
+    font-size: 20px;
   }
   .hamburger {
     display: block;
@@ -853,6 +883,9 @@ footer .SocialStore .SocialStoreIcon img {
   }
   nav {
     height: 30px;
+  }
+  nav .menu {
+    width: 85%;
   }
   .hamburger {
     top: 13px;

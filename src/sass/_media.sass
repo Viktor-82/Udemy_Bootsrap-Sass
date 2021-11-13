@@ -53,7 +53,26 @@
 	nav
 		position: relative
 		.menu
-			display: none
+			/** Добавление интерактивного меню **/
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			top: 0
+			left: -100%
+			width: 50%
+			height: 100vh
+			padding: 20px 15px
+			background-color: rgba(0, 0, 0, .8)
+			transition: 0.6s all
+			&_active
+				left: 0
+			&_item
+				padding-right: 0
+				border: none
+				margin: 10px 0
+			&_link
+				font-size: 20px
 	.hamburger
 		display: block
 		position: absolute
@@ -173,6 +192,8 @@
 			font-size: 10px
 	nav
 		height: 30px
+		.menu
+			width: 85%
 	.hamburger
 		top: 13px
 	.promo
