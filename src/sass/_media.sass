@@ -150,10 +150,14 @@
 			height: 90px
 			&BlackRound
 				margin: 6px 9px 6px 9px
-
-@media (min-width: 320px)
+		.FooterMenu
+			.MenuFooterWrap
+				padding: 0
+@media (max-width: 320px)
 	header
 		height: 30px
+	.container
+		padding: 0 15px
 	.subheader
 		top: 30px
 		height: 60px
@@ -171,8 +175,6 @@
 		height: 30px
 	.hamburger
 		top: 13px
-		span
-			margin-bottom: 3px
 	.promo
 		padding: 113px 0 32px 0
 		min-height: 400px
@@ -187,5 +189,54 @@
 			width: 216px
 			height: 56px
 			margin-top: 69px
-
-	
+	.descr_work
+		padding-top: 22px
+	.cause_work
+		margin-top: 15px
+		font-size: 16px
+	.AllWorld
+		padding-top: 25px
+		min-height: 360px
+		.label
+			width: 76px
+		.title
+			margin-top: 15px
+			font-size: 16px
+		.subtitle
+			font-size: 14px
+		.LookAllCity
+			width: 194px
+	footer
+		.container
+			padding-top: 25px
+		.LineFooter
+			width: 253px
+		.FooterWrapper
+			flex-direction: column
+		.FooterWrapper > div
+			&:nth-child(n)
+				width: 100%
+			&:nth-child(2)
+				order: -1
+				height: 79px
+			&:nth-child(3)
+				flex-direction: row
+				justify-content: space-between
+				height: 24px
+				margin: 20px 0
+				/** Эти стили мешали выровнять SocialStoreIcon
+					padding: 0 5px **/
+		.SocialIcons
+			margin-top: 20px
+			height: 32px
+		.SocialStore
+			padding: 0 14px
+			.SocialStoreIcon
+				margin: 0 3px
+				width: 100%
+				img
+					width: 80px
+		
+			
+				
+		
