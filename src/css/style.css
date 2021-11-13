@@ -934,8 +934,19 @@ footer .SocialStore .SocialStoreIcon img {
     /** Эти стили мешали выровнять SocialStoreIcon
 					padding: 0 5px **/
   }
+  footer .FooterMenu .SubMenuFooterWrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 6px;
+    height: 33px;
+  }
+  footer .FooterMenu .SubMenuFooterWrap .SubMenuFooter {
+    font-size: 11px;
+    margin: 6px 18px;
+    font-weight: 300;
+  }
   footer .SocialIcons {
-    margin-top: 20px;
+    margin-top: 33px;
     height: 32px;
   }
   footer .SocialStore {
